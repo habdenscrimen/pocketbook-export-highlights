@@ -1,0 +1,29 @@
+{
+  "name": "pocketbook-export-highlights",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:habdenscrimen/pocketbook-export-highlights.git",
+  "author": "Viacheslav Yefremov <habdenscrimen@gmail.com>",
+  "license": "MIT",
+  "homepage": "https://habdenscrimen.github.io/pocketbook-export-highlights",
+  "scripts": {
+    "start": "parcel serve src/index.html -d build",
+    "build": "parcel build src/index.html -d build",
+    "format": "prettier --write './src/**/*.{ts,tsx}'",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "gh-pages": "^2.1.1",
+    "husky": "^3.0.4",
+    "parcel-bundler": "^1.12.3",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.3"
+  },
+  "dependencies": {
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  }
+}
