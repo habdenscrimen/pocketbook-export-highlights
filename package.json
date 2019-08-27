@@ -5,25 +5,30 @@
   "repository": "git@github.com:habdenscrimen/pocketbook-export-highlights.git",
   "author": "Viacheslav Yefremov <habdenscrimen@gmail.com>",
   "license": "MIT",
-  "homepage": "https://habdenscrimen.github.io/pocketbook-export-highlights",
   "scripts": {
-    "start": "parcel serve src/index.html -d build",
-    "build": "parcel build src/index.html -d build",
-    "format": "prettier --write './src/**/*.{ts,tsx}'",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
+    "start": "node server/index.js",
+    "format": "prettier --write './**/*.js'"
   },
   "devDependencies": {
-    "@types/react": "^16.9.2",
-    "@types/react-dom": "^16.9.0",
-    "gh-pages": "^2.1.1",
+    "css-loader": "^3.2.0",
     "husky": "^3.0.4",
-    "parcel-bundler": "^1.12.3",
+    "json-loader": "^0.5.7",
     "prettier": "^1.18.2",
-    "typescript": "^3.5.3"
+    "style-loader": "^1.0.0",
+    "webpack-cli": "^3.3.7"
   },
   "dependencies": {
-    "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.1.5",
+    "filepond": "^4.5.0",
+    "sqlite-json": "^1.1.0",
+    "stimulus": "^1.1.1",
+    "webpack": "^4.39.2",
+    "webpack-dev-middleware": "^3.7.0"
   }
 }

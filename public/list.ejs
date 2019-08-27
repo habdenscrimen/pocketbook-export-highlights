@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="bundle.js" async></script>
+  <title>Extract pocketbook highlights</title>
+</head>
+
+<body>
+  <h2>
+    <a id="link_to_home" href="/">Home</a>
+  </h2>
+
+  <%if (list.length > 0) { %>
+  <div data-controller="list" style="padding: 50px 20px;">
+    <table>
+      <tr>
+        <th>Author</th>
+        <th>Title</th>
+        <th>Text</th>
+      </tr>
+
+      <% list.forEach((item, index) => { %>
+      <tr data-action="click->list#copy">
+        <td><%= item.Authors %></td>
+        <td><%= item.Title %></td>
+        <td>
+          <p data-target="list.source">
+            <%= item.Text %>
+          </p>
+        </td>
+      </tr>
+      <% }) %>
+    </table>
+  </div>
+  <% } else{ %>
+  <div class="center_container">
+    <p id="no_highlights_text">No highlights found
+    </p>
+  </div>
+  <% } %>
+</body>
+
+</html>
