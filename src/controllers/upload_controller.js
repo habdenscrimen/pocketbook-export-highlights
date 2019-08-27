@@ -6,15 +6,19 @@ export default class extends Controller {
   static targets = ['input']
 
   connect() {
+    fetch('http://localhost:9000/clear', {
+      method: 'POST',
+    }).then(this.initFilePond)
+  }
+
+  initFilePond = () => {
     FilePond.setOptions({
       server: {
         url: 'http://localhost:9000',
         process: {
           url: '/upload',
-          onload: (res) => {
-            console.log(JSON.parse(res))
-            // this.element.innerHTML = res
-            // window.location.pathname = '/list.html'
+          onload: () => {
+            window.location.pathname = '/list'
           },
         },
       },

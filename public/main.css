@@ -2,7 +2,7 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Helvetica, Arial, sans-serif;
 }
 
-#home_container {
+.center_container {
   height: 100vh;
   
   display: flex;
@@ -19,3 +19,44 @@ body {
 #text_container {
   text-align: center;
 }
+
+#link_to_home {
+  margin-left: 20px;
+}
+
+#link_to_home:visited {
+  color: black;
+}
+
+/* list of highlights */
+table {
+  border-collapse: collapse;
+}
+
+th {
+  padding: 10px 0;
+}
+
+td {
+  padding: 20px 10px;
+}
+
+td:nth-child(1), td:nth-child(2) {
+  min-width: 15vw;
+} 
+
+tr:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+tr, td {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+/* no highlights warning */
+#no_highlights_text {
+  padding-bottom: 130px;
+  font-size: 1.2em;
+}
+
