@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="bundle.js" async></script>
+  <title>Extract pocketbook highlights</title>
+</head>
+
+<body>
+  <div data-controller="upload" id="home_container">
+    <h1>Welcome</h1>
+
+    <div id="text_container">
+      <p>
+        Please, upload <u>books.db</u> file to extract the highlights.
+        You can find it on your device in <u>system/config</u> folder.
+      </p>
+      <p>
+        <b>Note: </b>You need to show hidden folders to see
+        <u>system/config</u>.
+      </p>
+    </div>
+
+    <div id="upload_container">
+      <input data-target="upload.input" type="file">
+    </div>
+  </div>
+</body>
+
+</html>
