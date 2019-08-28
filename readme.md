@@ -6,9 +6,14 @@ Export highlights from your Pocketbook.
 2. Upload <u>books.db</u> file there in accordance with the instructions on the site.
 3. Tadam! You can see the list of your highlights.
 
-
 ### TODO
 
 - [x] See the list of highlights.
-- [] Copy highlight by click.
-- [] Sort highlights by author and book name.
+- [x] Copy highlight by click.
+- [ ] Sort highlights by author and book name.
+
+### Screenshots
+
+| ![welcome page](./screenshots/welcome.png)  |
+|---|
+| ![list page](./screenshots/list.png)  |

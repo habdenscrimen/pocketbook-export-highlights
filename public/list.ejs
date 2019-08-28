@@ -10,13 +10,16 @@
   <title>Extract pocketbook highlights</title>
 </head>
 
-<body>
-  <h2>
-    <a id="link_to_home" href="/">Home</a>
-  </h2>
+<body style="margin: 0">
+  <div id="header">
+    <h2>
+      <a id="link_to_home" href="/">Home</a>
+    </h2>
+    <p>Click on row to copy text</p>
+  </div>
 
   <%if (list.length > 0) { %>
-  <div data-controller="list" style="padding: 50px 20px;">
+  <div style="padding: 50px 30px;">
     <table>
       <tr>
         <th>Author</th>
@@ -25,22 +28,18 @@
       </tr>
 
       <% list.forEach((item, index) => { %>
-      <tr data-action="click->list#copy">
+      <tr data-controller="list" data-action="click->list#copy">
         <td><%= item.Authors %></td>
         <td><%= item.Title %></td>
-        <td>
-          <p data-target="list.source">
-            <%= item.Text %>
-          </p>
-        </td>
+        <td data-target="list.source"><%= item.Text %></td>
       </tr>
       <% }) %>
+
     </table>
   </div>
   <% } else{ %>
   <div class="center_container">
-    <p id="no_highlights_text">No highlights found
-    </p>
+    <p id="no_highlights_text">No highlights found</p>
   </div>
   <% } %>
 </body>

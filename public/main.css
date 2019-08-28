@@ -60,3 +60,21 @@ tr, td {
   font-size: 1.2em;
 }
 
+
+/* header */
+#header {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header h2 {
+  padding: 10px 0 0 10px;
+}
+
+#header p {
+  margin-right: 10vw;
+  padding-top: 3vh;
+  font-style: italic;
+}
