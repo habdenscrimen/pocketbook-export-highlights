@@ -10,7 +10,7 @@ Export highlights from your Pocketbook.
 
 - [x] See the list of highlights.
 - [x] Copy highlight by click.
-- [ ] Sort highlights by author and book name.
+- [x] Sort highlights by author and book name.
 
 ### Screenshots
 

@@ -78,3 +78,13 @@ tr, td {
   padding-top: 3vh;
   font-style: italic;
 }
+
+#filters {
+  display: flex;
+  
+  margin: 5vh 0 3vh 0;
+}
+
+#filters div {
+  margin: 0 5vw;
+}

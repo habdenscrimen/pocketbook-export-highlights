@@ -19,6 +19,36 @@
   </div>
 
   <%if (list.length > 0) { %>
+  <div data-controller="filters" id="filters">
+    <div>
+      <h4>Author</h4>
+      <select data-action="filters#selectAuthor" name="author" id="author">
+
+        <% authors.forEach((item) => { %>
+        <option value="<%= item %>" <% if (selectedAuthor === item) { %>selected<% } %> %>>
+          <%= item %>
+        </option>
+        <% }) %>
+
+      </select>
+    </div>
+
+    <%if (isAuthorSelected) { %>
+    <div>
+      <h4>Book name</h4>
+      <select data-action="filters#selectBook" name="book" id="book">
+
+        <% books.forEach((item) => { %>
+        <option value="<%= item %>" <% if (selectedBook === item) { %>selected<% } %> %>>
+          <%= item %>
+        </option>
+        <% }) %>
+
+      </select>
+    </div>
+    <% } %>
+  </div>
+
   <div style="padding: 50px 30px;">
     <table>
       <tr>
@@ -27,7 +57,7 @@
         <th>Text</th>
       </tr>
 
-      <% list.forEach((item, index) => { %>
+      <% list.forEach((item) => { %>
       <tr data-controller="list" data-action="click->list#copy">
         <td><%= item.Authors %></td>
         <td><%= item.Title %></td>
