@@ -13,7 +13,7 @@ Export highlights from your Pocketbook.
       
       `git clone https://github.com/habdenscrimen/pocketbook-export-highlights.git && cd pocketbook-export-highlights && npm i && npm start`
 2. Go to http://localhost:9000.
-3. Upload <u>books.db</u> file there in accordance with the instructions on the site.
+3. Upload **books.db** file there in accordance with the instructions on the site.
 4. Tadam! You can see the list of your highlights.
 
 ### Screenshots
