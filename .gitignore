@@ -4,3 +4,4 @@ build
 .cache
 db
 .DS_Store
+bundle.*

@@ -2,9 +2,19 @@
 
 Export highlights from your Pocketbook.
 
-1. Start project (`npm i && npm start`) and go to http://localhost:9000.
-2. Upload <u>books.db</u> file there in accordance with the instructions on the site.
-3. Tadam! You can see the list of your highlights.
+1. Start project:
+    - via Docker:
+      
+      `docker run -p 9000:9000 habdenscrimen/export-pocketbook-highlights`
+
+        **or**
+
+    - manually: 
+      
+      `git clone https://github.com/habdenscrimen/pocketbook-export-highlights.git && cd pocketbook-export-highlights && npm i && npm start`
+2. Go to http://localhost:9000.
+3. Upload <u>books.db</u> file there in accordance with the instructions on the site.
+4. Tadam! You can see the list of your highlights.
 
 ### Screenshots
 
@@ -17,3 +27,4 @@ Export highlights from your Pocketbook.
 - [x] See the list of highlights.
 - [x] Copy highlight by click.
 - [x] Sort highlights by author and book name.
+- [x] Add the ability to run the app via Docker.

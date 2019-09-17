@@ -1,11 +1,8 @@
 const path = require('path')
 const fs = require('fs')
 const express = require('express')
-const webpack = require('webpack')
-const webpackMiddleware = require('webpack-dev-middleware')
 const fileUpload = require('express-fileupload')
 
-const webpackConfig = require('../webpack.config')
 const routes = require('./routes')
 const { deleteFolder } = require('./helpers')
 
@@ -18,7 +15,6 @@ app.set('view engine', 'ejs')
 
 // middlewares
 app.use(express.static(publicPath))
-app.use(webpackMiddleware(webpack(webpackConfig), { stats: 'errors-only' }))
 app.use(fileUpload())
 
 // routes
