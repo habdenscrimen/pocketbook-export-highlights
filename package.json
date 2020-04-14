@@ -27,7 +27,7 @@
     "ejs": "^2.7.1",
     "express": "^4.17.1",
     "express-fileupload": "^1.1.5",
-    "filepond": "^4.13.1",
+    "filepond": "^4.13.2",
     "sqlite-json": "^1.1.0"
   }
 }
