@@ -19,7 +19,7 @@
     "husky": "^3.0.4",
     "prettier": "^2.0.4",
     "stimulus": "^1.1.1",
-    "style-loader": "^1.0.0",
+    "style-loader": "^1.2.0",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.11"
   },
