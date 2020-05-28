@@ -13,7 +13,7 @@
   "devDependencies": {
     "@babel/core": "^7.6.0",
     "@babel/plugin-proposal-class-properties": "^7.5.5",
-    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-env": "^7.10.1",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.2.0",
     "husky": "^3.0.4",
